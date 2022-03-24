@@ -1,9 +1,38 @@
 .finalizar-pedido__fundo {
   background-color: var(--branco);
   margin-top: 2rem;
+  padding: 2rem 0.5rem;
 }
 
 .finalizar-pedido__descricao {
   margin-top: 4rem;
   margin-bottom: 3.5rem;
+}
+
+.finalizar-pedido__titulo {
+  color: var(--preto);
+  font-weight: var(--peso-destaque);
+  margin-bottom: .7rem;
+}
+
+form .finalizar-pedido--input {
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
+.finalizar-pedido__endereco {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 16px;
+}
+
+.finalizar-pedido__pagamento {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 16px;
+}
+
+.finalizar-pedido--botao {
+  margin-bottom: 3.1rem;
 }

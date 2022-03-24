@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="css/componentes/cabecalho.css">
   <link rel="stylesheet" href="css/componentes/carrinho.css">
   <link rel="stylesheet" href="css/finalizar-compra.css">
+  <link rel="stylesheet" href="css/componentes/input.css">
+  <link rel="stylesheet" href="css/componentes/botoes.css">
   <link rel="stylesheet" href="css/componentes/rodape.css">
 </head>
   <body>
@@ -48,7 +50,7 @@
           <li class="item-carrinho">
             <img src="img/Detalhe-do-produto1.png" alt="Imagem do produto no carrinho" class="carrinho__imagem">
             <div class="carrinho__texto">
-              <h4 class="texto--sombra">Cordyline fruticosa</h4>
+              <h4 class="texto--sombra ">Cordyline fruticosa</h4>
               <img src="img/icon/icone_fechar.svg" alt="Excluir Produto da Lista" class="carrinho__excluir">
               <p class="texto--sombra">R$ 20,00</p>
               <span class="carrinho__quantidade">1 qtd</span>
@@ -77,6 +79,32 @@
         <h3 class="titulo--destaque">Finalizar pedido</h3>
         <p class="texto">Insira suas informações abaixo e você receberá um e-mail com os detalhes da sua compra. 
           Assim que o pagamento for processado você receberá seu produto em sua casa em até 7 dias úteis.</p>
+      </section>
+      <section>
+        <form action="">
+          <h5 class="finalizar-pedido__titulo">informações</h5>
+          <input type="text" class="input finalizar-pedido--input" placeholder="Nome">
+          <input type="email" class="input finalizar-pedido--input" placeholder="E-mail">
+          <h5 class="finalizar-pedido__titulo">Endereço de Entrega</h5>
+          <input type="text" class="input finalizar-pedido--input" placeholder="CEP">
+          <input type="text"class="input finalizar-pedido--input" placeholder="Rua / Avenida">
+          <div class="finalizar-pedido__endereco">
+            <input type="number" class="input finalizar-pedido--input" placeholder="Número">
+            <input type="text" class="input finalizar-pedido--input" placeholder="Complemento">
+            <input type="text" class="input finalizar-pedido--input" placeholder="cidade">
+            <input type="text" class="input finalizar-pedido--input" placeholder="Estado">
+          </div>
+          <h5 class="finalizar-pedido__titulo">Pagamento</h5>
+          <input type="number" class="input finalizar-pedido--input" placeholder="Número do cartão">
+          <input type="text" class="input finalizar-pedido--input" placeholder="Nome do Titular do cartão">
+          <div class="finalizar-pedido__pagamento">
+            <input type="number" class="input finalizar-pedido--input" placeholder="Validade">
+            <input type="number" class="input finalizar-pedido--input" placeholder="CVV">
+          </div>
+          <input type="number" class="input finalizar-pedido--input" placeholder="CPF do titular do cartão">
+          <input type="number" class="input finalizar-pedido--input" placeholder="Número de parcelas">
+          <button class="botao finalizar-pedido--botao">Finalizar pagamento</button>
+        </form>
       </section>
     </main>
     <footer class="container rodape">
