@@ -41,10 +41,6 @@
   top: 4px;
 }
 
-.carrinho__titulo {
-  color: var(--preto);
-}
-
 .carrinho__quantidade::after {
   padding-left: .5rem;
   padding-right: 0.2rem;
@@ -67,5 +63,6 @@
 
 .carrinho_valores > p:nth-child(n + 5){
   color: var(--preto);
+  font-weight: 600;
 }
 
