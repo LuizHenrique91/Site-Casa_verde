@@ -1,0 +1,18 @@
+.modal_fundo{
+  background-image: none;
+
+  background-image: url(../img/splash-modal.svg);
+  background-repeat: no-repeat;
+  background-position: right top;
+
+}
+
+.modal__img {
+  display: block;
+  
+  margin: 2.5rem auto 2rem;
+}
+
+.modal--botao {
+  margin-top: 3rem;
+}
