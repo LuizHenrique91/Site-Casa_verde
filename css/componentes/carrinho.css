@@ -2,24 +2,26 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 2.1rem;
 }
 .item-carrinho {
-  margin-top: 2rem;
+  margin-bottom: 2rem;
 
   border-bottom: 2px solid var(--preto-transparente);
   box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
 
-  padding-bottom: 2rem;
+  padding-bottom: 1.5rem;
 
   box-sizing: border-box;
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .carrinho__imagem {
   box-shadow: 5px 5px 16px rgb(0 0 0 / 35%);
   width: 5rem;
+  margin-left: 1rem;
 }
 
 .carrinho__texto {
@@ -29,8 +31,11 @@
   row-gap: 5px;
   align-items: center;
 
-  padding: .5rem 1rem;
   box-sizing: border-box;
+}
+
+.carrinho__texto > h4{
+  color: var(--preto);
 }
 
 .carrinho__excluir {
@@ -45,8 +50,25 @@
 
 .carrinho__quantidade::after {
   padding-left: .5rem;
+  padding-right: 0.2rem;
   content: url(../../img/icon/chevron.png);
   background-repeat: no-repeat;
 }
 
+.carrinho_valores {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  row-gap: 20px;
+  margin-bottom: 20px;
+}
+
+.carrinho_valores > p:nth-child(even){
+  justify-self: end;
+}
+
+
+.carrinho_valores > p:nth-child(n + 5){
+  color: var(--preto);
+}
 
