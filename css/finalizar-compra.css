@@ -1,0 +1,9 @@
+.finalizar-pedido__fundo {
+  background-color: var(--branco);
+  margin-top: 2rem;
+}
+
+.finalizar-pedido__descricao {
+  margin-top: 4rem;
+  margin-bottom: 3.5rem;
+}
