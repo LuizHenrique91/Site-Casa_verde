@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@900&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/componentes/cabecalho.css">
+  <link rel="stylesheet" href="css/componentes/menu.css">
   <link rel="stylesheet" href="css/componentes/input.css">
   <link rel="stylesheet" href="css/componentes/botoes.css">
   <link rel="stylesheet" href="css/chamada.css">
@@ -20,53 +21,68 @@
   <link rel="stylesheet" href="css/ofertas.css">
   <link rel="stylesheet" href="css/componentes/video.css">
   <link rel="stylesheet" href="css/componentes/rodape.css">
+  <link rel="stylesheet" href="css/responsivo.css">
 </head>
   <body>
     <header class="container cabecalho">
       <img src="img/logo.svg" alt="Logo da casa verde" class="cabecalho__logo">
-      <a href="#" aria-label="Meu Carrinho">
+      <a href="#" aria-label="Meu Carrinho" class="cabecalho-link__carrinho">
         <img src="img/icon/carrinho_cabecalho.svg" alt="Icone do carrinho de compras" class="cabecalho__carrinho">
       </a>
+      <nav class="menu__cabecalho">
+        <ul class="menu__lista">
+          <li class="menu__item"><a href="#">Como Fazer</a></li>
+          <li class="menu__item"><a href="#">Ofertas</a></li>
+          <li class="menu__item"><a href="#">Depoimentos</a></li>
+          <li class="menu__item"><a href="#">Videos</a></li>
+          <li class="menu__item"><a href="#">Meu carrinho</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
       <section class="chamada container">
-        <h2 class="titulo">Sua casa com as 
-          <span class="titulo--destaque">melhores plantas</span>
-        </h2>
-        <p class="chamada__texto texto texto--sombra">Encontre aqui uma vasta seleção de plantas para decorar a sua casa e torná-lo uma pessoa mais feliz no seu dia a dia. 
-          Entre com seu e-mail e assine nossa newsletter para saber das novidades da marca</p>
-        <img src="img/planta_home.png" alt="Foto do produto" class="chamada__imagem">
-        <form action="#" class="chamada__formulario">
-          <input type="" class="input input--icone input--email" aria-label="Insira seu e-mail" placeholder="Insira seu e-mail">
-          <button class="botao">Assinar Newsletter</button>
-        </form>
+        <div class="responsivo__chamada">
+          <h2 class="titulo">Sua casa com as 
+            <span class="titulo--destaque responsivo--destaque">melhores plantas</span>
+          </h2>
+          <p class="chamada__texto texto texto--sombra responsivo--texto">Encontre aqui uma vasta seleção de plantas para decorar a sua casa e torná-lo uma pessoa mais feliz no seu dia a dia. 
+            Entre com seu e-mail e assine nossa newsletter para saber das novidades da marca</p>
+            <form action="#" class="chamada__formulario responsivo--input">
+              <input type="email" class="input input--icone input--email responsivo-email" aria-label="Insira seu e-mail" placeholder="Insira seu e-mail">
+              <button class="botao">Assinar Newsletter</button>
+            </form>
+        </div>
+        <img src="img/imagem-header.png" alt="Foto do produto" class="chamada__imagem responsivo--imagem">
       </section>
-      <section class="como-conseguir container">
-        <article class="cartao">
-          <h3 class="titulo alinhamento--meio">Como conseguir
-            <span class="titulo--destaque">minha planta</span>
-          </h3>
-          <ul class="lista-item">
-            <li class="item">
-              <span class="item__icone item__icone--cursor"></span>
-              <p>Escolha suas plantas</p>
-            </li>
-            <li class="item">
-              <span class="item__icone item__icone--carrinho"></span>
-              <p>Faça seu pedido</p>
-            </li>
-            <li class="item">
-              <span class="item__icone item__icone--caminhao"></span>
-              <p>Aguarde na sua casa</p>
-            </li>
-          </ul>
+      <section class="como-conseguir container responsivo-container">
+        <article class="cartao responsivo--cartao">
+          <img src="img/planta_meio.png" alt="Banner do meio da tela" class="responsivo__imagem">
+          <div class="responsivo__coluna">
+            <h3 class="titulo alinhamento--meio">Como conseguir
+              <span class="titulo--destaque">minha planta</span>
+            </h3>
+            <ul class="lista-item">
+              <li class="item">
+                <span class="item__icone item__icone--cursor"></span>
+                <p>Escolha suas plantas</p>
+              </li>
+              <li class="item">
+                <span class="item__icone item__icone--carrinho"></span>
+                <p>Faça seu pedido</p>
+              </li>
+              <li class="item">
+                <span class="item__icone item__icone--caminhao"></span>
+                <p>Aguarde na sua casa</p>
+              </li>
+            </ul>
+          </div>
         </article>
       </section>
 
       <section class="container oferta">
         <h2 class="alinhamento--meio titulo">Conheça nossos<span class="titulo--destaque">produtos</span></h2>
-        <ul>
+        <ul class="responsivo-lista__produtos">
           <li class="produto">
             <img src="img/produto-01.png" alt="Foto do Produto" class="produto__imagem">
             <div class="produto__conteudo">
@@ -117,61 +133,82 @@
           </li>
         </ul>
       </section>
+
+      <section class="container responsivo__opiniao-cliente">
+        <article class="responsivo__opiniao">
+          <div class="responsivo-fundo__imagem"></div>
+          <img src="img/imagem_cliente.png" alt="Foto de cliente" class="opiniao__imagem">
+          <div class="responsivo-texto__opiniao">
+            <h4 class="titulo--destaque">Não acredita em nós<br>veja o que os clientes tem a dizer</h4>
+            <p class="opiniao__texto texto">Nullam a orci vitae orci fringilla pulvinar sit amet quis felis. Quisque vel ornare arcu. Fusce urna quam, tempus vitae vehicula et, 
+              efficitur non sem. Morbi tincidunt congue lorem eu tempor. Nulla bibendum ligula lorem, vel sollicitudin nibh scelerisque non. 
+              Proin ut nisi congue, sodales tellus at, consectetur tellus. Praesent ac elit quis purus congue bibendum. Etiam nec massa ac enim 
+              vehicula maximus. Pellentesque semper fermentum maximus. Integer dignissim libero felis, id tempor purus viverra non. Quisque 
+              sodales non lacus ut tincidunt. Cras in venenatis leo.”</p>
+            <p class="responsivo-cliente-opiniao">Juliana Ferraz</p>
+            <p class="responsivo-data-opiniao">Cliente desde 2018</p>
+          </div>
+        </article>
+      </section>
+
+      <section class="container">
+        <h2 class="titulo alinhamento--meio">Veja aqui nossos<span class="titulo--destaque">Vídeos</span></h2>
+        <ul class="responsivo-lista__videos"  >
+          <li class="cartao-de-video container">
+            <div class="cartao-de-video__video">
+              <img src="https://picsum.photos/278/252" alt="Capa do vídeo">
+            </div>
+            <h3 class="cartao-de-video__titulo">Video XYZ</h3>
+            <p>Publicado em março de 2019</p>
+          </li>
+          <li class="cartao-de-video container">
+            <div class="cartao-de-video__video">
+              <img src="https://picsum.photos/278/252" alt="Capa do vídeo">
+            </div>
+            <h3 class="cartao-de-video__titulo">Video XYZ</h3>
+            <p>Publicado em março de 2019</p>
+          </li>
+          <li class="cartao-de-video container">
+            <div class="cartao-de-video__video">
+              <img src="https://picsum.photos/278/252" alt="Capa do vídeo">
+            </div>
+            <h3 class="cartao-de-video__titulo">Video XYZ</h3>
+            <p>Publicado em março de 2019</p>
+          </li>
+          <li class="cartao-de-video container">
+            <div class="cartao-de-video__video">
+              <img src="https://picsum.photos/278/252" alt="Capa do vídeo">
+            </div>
+            <h3 class="cartao-de-video__titulo">Video XYZ</h3>
+            <p>Publicado em março de 2019</p>
+          </li>
+        </ul>
+      </section>
     </main>
 
-    <section class="container">
-      <h2 class="titulo alinhamento--meio">Veja aqui nossos<span class="titulo--destaque">Vídeos</span></h2>
-      <ul>
-        <li class="cartao-de-video container">
-          <div class="cartao-de-video__video">
-            <img src="https://picsum.photos/278/252" alt="Capa do vídeo">
-          </div>
-          <h3 class="cartao-de-video__titulo">Video XYZ</h3>
-          <p>Publicado em março de 2019</p>
-        </li>
-        <li class="cartao-de-video container">
-          <div class="cartao-de-video__video">
-            <img src="https://picsum.photos/278/252" alt="Capa do vídeo">
-          </div>
-          <h3 class="cartao-de-video__titulo">Video XYZ</h3>
-          <p>Publicado em março de 2019</p>
-        </li>
-        <li class="cartao-de-video container">
-          <div class="cartao-de-video__video">
-            <img src="https://picsum.photos/278/252" alt="Capa do vídeo">
-          </div>
-          <h3 class="cartao-de-video__titulo">Video XYZ</h3>
-          <p>Publicado em março de 2019</p>
-        </li>
-        <li class="cartao-de-video container">
-          <div class="cartao-de-video__video">
-            <img src="https://picsum.photos/278/252" alt="Capa do vídeo">
-          </div>
-          <h3 class="cartao-de-video__titulo">Video XYZ</h3>
-          <p>Publicado em março de 2019</p>
-        </li>
-      </ul>
-    </section>
-
-    <footer class="container rodape">
-      <img src="img/logo.svg" alt="Logo da casa verde" class="rodape__logo">
+    <footer>
+      <div class="container rodape">
+        <img src="img/logo.svg" alt="Logo da casa verde" class="rodape__logo">
       <ul class="rodape__social">
         <li><a href="#" class="rodape__social-midia" title="Facebook"><img src="img/icon/facebook.svg" alt="Ícone do Facebook"></a></li>
         <li><a href="#" class="rodape__social-midia" title="Twitter"><img src="img/icon/twitter.svg" alt="Ícone do Twitter"></a></li>
         <li><a href="#" class="rodape__social-midia" title="Instagram"><img src="img/icon/instagram.svg" alt="Ícone do Instagram"></a></li>
       </ul>
-      <address class="rodape__unidade texto">
+      <address class="rodape__unidade texto endereco-sp-responsivo">
         <span class="rodape__unidade-titulo">Rio de Janeiro</span>
         Rua Siqueira Campos, 171, 303<br>
         Copacabana<br>
         Telefone: (21) 99876-0099<br>
       </address>
-      <address class="rodape__unidade texto">
+      <address class="rodape__unidade texto endereco-rj-responsivo">
         <span class="rodape__unidade-titulo">São Paulo</span>
         Rua Anita Garibaldi, 33, 13<br>
         Sé<br>
         Telefone: (11) 99875-2201<br>
       </address>
+      <img src="img/Ilustra_rodape.png" alt="Imagem do Rodape" class="imagem__rodape">
+      </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
