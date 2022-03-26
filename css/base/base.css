@@ -8,11 +8,14 @@ body {
 
   background: url(../../img/fundo_textura.png), url(../../img/linha.svg);
   background-position: center;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 .container{
-  padding-left: 1rem;
-  padding-right: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 
 .titulo{
