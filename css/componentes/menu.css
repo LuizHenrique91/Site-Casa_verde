@@ -1,0 +1,17 @@
+.menu__lista{
+  display: flex;
+}
+
+.menu__item {
+  padding-left: 1rem;
+}
+
+.menu__item > a {
+  color: var(--preto);
+  font-weight: 500;
+}
+
+.menu__item a::after {
+  content: '/';
+  padding-left: 1rem;
+}
